@@ -8,107 +8,234 @@
 </head>
 <body>
 
-    <!-- Register page header -->
-    <header id="header">
-        <div id="header-content">
-            <h1 id="website-title">ClassMate
-                <p id="website-tagline">Manage your classes and tasks in one place.
-                </p>
-            </h1>
-        </div>
-    </header>
+    <!-- Main page wrapper -->
+    <div id="page">
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Account registration section -->
-        <section id="registration-section">
-            <div id="registration-heading">
-                <h2 id="registration-title">Create Account
-                    <p id="registration-description">Create your ClassMate student account.
-                    </p>
+        <!-- Register page branding section -->
+        <aside id="branding-section">
+
+            <!-- Website brand -->
+            <div id="brand-header">
+                <div id="brand-icon">C</div>
+
+                <h1 id="website-title">ClassMate</h1>
+            </div>
+
+            <!-- Branding content -->
+            <div id="branding-content">
+                <p id="branding-label">YOUR ACADEMIC COMPANION</p>
+
+                <h2 id="branding-title">
+                    Your classes.<br>
+                    Your tasks.<br>
+                    All in one place.
                 </h2>
-            </div>
 
-            <!-- Account registration form -->
-            <form id="registration-form" action="#" method="post">
-                <!-- First name -->
-                <div id="first-name-group" class="form-group">
-                    <label for="first-name">First name
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
-                    </label>
-                </div>
-
-                <!-- Last name field -->
-                <div id="last-name-group" class="form-group">
-                    <label for="last-name">Last name
-                        <input type="text" id="last-name" name="last-name" placeholder="Enter your lastname" required>
-                    </label>
-                </div>
-
-                <!-- Age field -->
-                <div id="age-group" class="form-group">
-                    <label for="age-group">Age
-                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
-                    </label>
-                </div>
-
-                <!-- University / School field -->
-                <div id="School-group" class="form-group">
-                    <label for="school">University / School
-                        <input type="text" id="school" name="school" placeholder="Enter your university or school" required>
-                    </label>
-                </div>
-
-                <!-- Email field for account verification -->
-                <div id="email-group" class="form-group">
-                    <label for="email">Email Address
-                        <input type="text" id="email" name="email" placeholder="Enter your email address" required>
-                    </label>
-                </div>
-
-                <!-- Username field -->
-                <div id="username-group" class="form-group">
-                    <label for="username">Username
-                        <input type="text" id="username" name="username" placeholder="Create a username" required>
-                    </label>
-                </div>
-
-                <!-- Password field -->
-                <div id="password-group" class="form-group">
-                    <label for="password">Password
-                        <input type="text" id="password" name="password" placeholder="Create a password" required>
-                    </label>
-                </div>
-
-                <!-- Password confirmation field -->
-                <div id="confirm-password-group" class="form-group">
-                    <label for="confirm-password">Confirm Password
-                        <input type="text" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
-                    </label>
-                </div>
-
-                <!-- Terms and conditions agreement -->
-                <div id="terms-conditions-group" class="form-group">
-                    <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
-                        <label for="terms-conditions">I agree to the Terms and Conditions
-                        </label>
-                </div>
-
-                <!-- Registration button -->
-                <div id="registration-actions">
-                    <button id="register-button" type="submit">Create account
-                    </button>
-                </div>
-            </form>
-
-            <!-- Link to the login page -->
-            <div id="login-link-section">
-                <p>Already have an account?
-                    <a id="login-link" href="login.html">Sign In
-                    </a>
+                <p id="branding-description">
+                    Stay organized, manage your schedule, and keep track
+                    of your academic responsibilities with ClassMate.
                 </p>
+
+                <!-- Decorative visual -->
+                <div id="branding-decoration" aria-hidden="true">
+                    <div id="decoration-circle-one"></div>
+                    <div id="decoration-circle-two"></div>
+
+                    <div id="decoration-card">
+                        <div id="decoration-card-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="decoration-line line-long"></div>
+                        <div class="decoration-line line-medium"></div>
+                        <div class="decoration-line line-short"></div>
+
+                        <div id="decoration-task">
+                            <span id="decoration-check">✓</span>
+                            <p>Stay on top of your tasks</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+
+            <!-- Branding footer -->
+            <div id="branding-footer">
+                <p>Designed for students, built for productivity.</p>
+            </div>
+
+        </aside>
+
+        <!-- Main registration content -->
+        <main id="main-content">
+            
+            <!-- Account registration section -->
+            <section id="registration-section">
+
+                <!-- Registration heading -->
+                <div id="registration-heading">
+                    <p id="registration-label">GET STARTED</p>
+
+                    <h2 id="registration-title">Create Account</h2>
+
+                    <p id="registration-description">
+                        Create your ClassMate student account.
+                    </p>
+                </div>
+
+                <!-- Account registration form -->
+                <form id="registration-form" action="#" method="post">
+
+                    <!-- Personal information group -->
+                    <div id="personal-information">
+
+                        <!-- First name -->
+                        <div id="first-name-group" class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="Enter your first name"
+                                autocomplete="given-name"
+                                required
+                            >
+                        </div>
+
+                        <!-- Last name -->
+                        <div id="last-name-group" class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Enter your last name"
+                                autocomplete="family-name"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <!-- Age field -->
+                    <div id="age-group" class="form-group">
+                        <label for="age">Age</label>
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="18"
+                            max="65"
+                            placeholder="Enter your age"
+                            required
+                        >
+                    </div>
+
+                    <!-- University / School field -->
+                    <div id="school-group" class="form-group">
+                        <label for="school">University / School</label>
+                        <input
+                            type="text"
+                            id="school"
+                            name="school"
+                            placeholder="Enter your university or school"
+                            autocomplete="organization"
+                            required
+                        >
+                    </div>
+
+                    <!-- Email field for account verification -->
+                    <div id="email-group" class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <p id="email-description">
+                            Used for account verification.
+                        </p>
+                    </div>
+
+                    <!-- Username field -->
+                    <div id="username-group" class="form-group">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Create a username"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password field -->
+                    <div id="password-group" class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password confirmation field -->
+                    <div id="confirm-password-group" class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+
+                    <!-- Terms and conditions agreement -->
+                    <div id="terms-conditions-group" class="form-group">
+                        <input
+                            type="checkbox"
+                            id="terms-conditions"
+                            name="terms-conditions"
+                            required
+                        >
+
+                        <label for="terms-conditions">
+                            I agree to the
+                            <a id="terms-link" href="#">Terms and Conditions</a>
+                        </label>
+                    </div>
+
+                    <!-- Registration button -->
+                    <div id="registration-actions">
+                        <button id="register-button" type="submit">
+                            <span>Create Account</span>
+                            <span id="button-arrow" aria-hidden="true">→</span>
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Link to the login page -->
+                <div id="login-link-section">
+                    <p>
+                        Already have an account?
+                        <a id="login-link" href="login.html">Sign In</a>
+                    </p>
+                </div>
+
+            </section>
+        </main>
+    </div>
 </body>
 </html>
