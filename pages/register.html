@@ -1,124 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClassMate | Create Account</title>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <h1>ClassMate</h1>
-      <p>Manage Your Classes and Tasks inOne Place.</p>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Register page header -->
+    <header id="header">
+        <div id="header-content">
+            <h1 id="website-title">ClassMate
+                <p id="website-tagline">Manage your classes and tasks in one place.
+                </p>
+            </h1>
+        </div>
     </header>
 
-    <!-- Main content of the registration page -->
-    <main>
-      <section>
-        <h2>Create Account</h2>
-        <p>Create your ClassMate student account.</p>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Account registration section -->
+        <section id="registration-section">
+            <div id="registration-heading">
+                <h2 id="registration-title">Create Account
+                    <p id="registration-description">Create your ClassMate student account.
+                    </p>
+                </h2>
+            </div>
 
-        <!-- Registration form -->
-        <form action="#" method="post">
-          <!-- First name field -->
-          <label for="first-name">First Name</label>
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            placeholder="Enter your firstname"
-            required
-          />
-          <br /><br />
+            <!-- Account registration form -->
+            <form id="registration-form" action="#" method="post">
+                <!-- First name -->
+                <div id="first-name-group" class="form-group">
+                    <label for="first-name">First name
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    </label>
+                </div>
 
-          <!-- Lastname field -->
-          <label for="last-name">Last Name</label>
-          <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            placeholder="Enter your last name"
-            readonly
-          />
-          <br /><br />
+                <!-- Last name field -->
+                <div id="last-name-group" class="form-group">
+                    <label for="last-name">Last name
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your lastname" required>
+                    </label>
+                </div>
 
-          <!-- Age field -->
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" min="18" max="65" />
-          <br /><br />
+                <!-- Age field -->
+                <div id="age-group" class="form-group">
+                    <label for="age-group">Age
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    </label>
+                </div>
 
-          <!-- University or school field -->
-          <label for="school">University / School</label>
-          <input
-            type="text"
-            id="school"
-            name="school"
-            placeholder="Enter your university or school"
-            required
-          />
-          <br /><br />
+                <!-- University / School field -->
+                <div id="School-group" class="form-group">
+                    <label for="school">University / School
+                        <input type="text" id="school" name="school" placeholder="Enter your university or school" required>
+                    </label>
+                </div>
 
-          <!-- Email field for account verification -->
-          <label for="email">Email Address</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Enter your email address"
-            required
-          />
-          <br /><br />
+                <!-- Email field for account verification -->
+                <div id="email-group" class="form-group">
+                    <label for="email">Email Address
+                        <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+                    </label>
+                </div>
 
-          <!-- Create account field -->
-          <!-- Username field -->
-          <label for="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Create a username"
-            required
-          />
-          <br /><br />
+                <!-- Username field -->
+                <div id="username-group" class="form-group">
+                    <label for="username">Username
+                        <input type="text" id="username" name="username" placeholder="Create a username" required>
+                    </label>
+                </div>
 
-          <!-- Password field -->
-          <label for="password">Password</label>
-          <input
-            type="text"
-            id="password"
-            name="password"
-            placeholder="Create a password"
-            required
-          />
-          <br /><br />
+                <!-- Password field -->
+                <div id="password-group" class="form-group">
+                    <label for="password">Password
+                        <input type="text" id="password" name="password" placeholder="Create a password" required>
+                    </label>
+                </div>
 
-          <!-- Password confirmation field -->
-          <label for="confirm-password">Confirm Password</label>
-          <input
-            type="text"
-            id="confirm-password"
-            name="confirm-password"
-            placeholder="Confirm your password"
-            required
-          />
-          <br /><br />
+                <!-- Password confirmation field -->
+                <div id="confirm-password-group" class="form-group">
+                    <label for="confirm-password">Confirm Password
+                        <input type="text" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    </label>
+                </div>
 
-          <!-- Terms and conditions agreement -->
-          <input type="checkbox" id="terms" name="terms" required />
-          <label for="terms">I agree to the Terms and Conditions</label>
-          <br /><br />
+                <!-- Terms and conditions agreement -->
+                <div id="terms-conditions-group" class="form-group">
+                    <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                        <label for="terms-conditions">I agree to the Terms and Conditions
+                        </label>
+                </div>
 
-          <!-- Registration button -->
-          <button type="submit">Create Account</button>
-        </form>
+                <!-- Registration button -->
+                <div id="registration-actions">
+                    <button id="register-button" type="submit">Create account
+                    </button>
+                </div>
+            </form>
 
-        <!-- Link to the login page -->
-        <p>
-          Already have an account?
-          <a href="login.html">Sign In</a>
-        </p>
-      </section>
+            <!-- Link to the login page -->
+            <div id="login-link-section">
+                <p>Already have an account?
+                    <a id="login-link" href="login.html">Sign In
+                    </a>
+                </p>
+            </div>
+        </section>
     </main>
-  </body>
+</body>
 </html>
