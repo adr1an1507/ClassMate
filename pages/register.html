@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassMate | Create Account</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>ClassMate</h1>
+      <p>Manage Your Classes and Tasks inOne Place.</p>
+    </header>
+
+    <!-- Main content of the registration page -->
+    <main>
+      <section>
+        <h2>Create Account</h2>
+        <p>Create your ClassMate student account.</p>
+
+        <!-- Registration form -->
+        <form action="#" method="post">
+          <!-- First name field -->
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Enter your firstname"
+            required
+          />
+          <br /><br />
+
+          <!-- Lastname field -->
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Enter your last name"
+            readonly
+          />
+          <br /><br />
+
+          <!-- Age field -->
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="65" />
+          <br /><br />
+
+          <!-- University or school field -->
+          <label for="school">University / School</label>
+          <input
+            type="text"
+            id="school"
+            name="school"
+            placeholder="Enter your university or school"
+            required
+          />
+          <br /><br />
+
+          <!-- Email field for account verification -->
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <br /><br />
+
+          <!-- Create account field -->
+          <!-- Username field -->
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Create a username"
+            required
+          />
+          <br /><br />
+
+          <!-- Password field -->
+          <label for="password">Password</label>
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          />
+          <br /><br />
+
+          <!-- Password confirmation field -->
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="text"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm your password"
+            required
+          />
+          <br /><br />
+
+          <!-- Terms and conditions agreement -->
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I agree to the Terms and Conditions</label>
+          <br /><br />
+
+          <!-- Registration button -->
+          <button type="submit">Create Account</button>
+        </form>
+
+        <!-- Link to the login page -->
+        <p>
+          Already have an account?
+          <a href="login.html">Sign In</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

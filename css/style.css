@@ -1,0 +1,446 @@
+/* =========================
+   Design System
+========================= */
+
+:root {
+    --primary-color: #315f8f;
+    --primary-hover: #264d77;
+    --primary-soft: #eaf1f8;
+
+    --background-color: #f4f6f8;
+    --surface-color: #ffffff;
+
+    --text-color: #18212b;
+    --muted-text-color: #697586;
+
+    --border-color: #dfe4ea;
+    --border-focus: #8eafd0;
+
+    --danger-color: #c75252;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+
+    --shadow-sm: 0 2px 8px rgba(24, 33, 43, 0.05);
+    --shadow-md: 0 12px 35px rgba(24, 33, 43, 0.08);
+
+    --transition: 180ms ease;
+}
+
+
+/* =========================
+   Global Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    color: var(--text-color);
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(49, 95, 143, 0.07),
+            transparent 30%
+        ),
+        var(--background-color);
+
+    line-height: 1.5;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    width: 100%;
+    padding: 2rem 1.5rem 1.25rem;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+
+    font-size: 1.5rem;
+    font-weight: 750;
+
+    letter-spacing: -0.025em;
+}
+
+header p {
+    margin-top: 0.25rem;
+
+    color: var(--muted-text-color);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   Main Layout
+========================= */
+
+main {
+    width: min(100% - 2rem, 560px);
+
+    margin: 0 auto;
+    padding: 0 0 3rem;
+}
+
+section {
+    padding: clamp(1.5rem, 4vw, 2.25rem);
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+}
+
+section h2 {
+    color: var(--text-color);
+
+    font-size: clamp(1.5rem, 4vw, 1.85rem);
+    font-weight: 750;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+}
+
+section > p {
+    margin-top: 0.45rem;
+    margin-bottom: 1.75rem;
+    text-align: center;
+    color: var(--muted-text-color);
+
+    font-size: 0.92rem;
+}
+
+
+/* =========================
+   Forms
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: block;
+
+    margin-bottom: 0.45rem;
+
+    color: #303b47;
+
+    font-size: 0.86rem;
+    font-weight: 650;
+}
+
+
+/* Remove the visual spacing
+   created by <br><br> */
+form br {
+    display: none;
+}
+
+
+/* Text and number inputs */
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    min-height: 46px;
+
+    padding: 0.7rem 0.85rem;
+    margin-bottom: 1rem;
+
+    color: var(--text-color);
+    background: #ffffff;
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    font: inherit;
+    font-size: 0.92rem;
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background-color var(--transition);
+}
+
+
+/* Placeholder */
+
+form input::placeholder {
+    color: #9aa4af;
+}
+
+
+/* Hover */
+
+form input:hover {
+    border-color: #c7cfd8;
+}
+
+
+/* Focus */
+
+form input:focus {
+    border-color: var(--border-focus);
+
+    box-shadow:
+        0 0 0 3px rgba(49, 95, 143, 0.11);
+}
+
+
+/* Invalid input */
+
+form input:invalid:not(:placeholder-shown) {
+    border-color: var(--danger-color);
+}
+
+
+/* Read-only input */
+
+form input:read-only {
+    background: #f5f7f9;
+    color: #7c8793;
+}
+
+
+/* =========================
+   Terms and Conditions
+========================= */
+
+form input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+
+    accent-color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+form input[type="checkbox"] + label {
+    display: inline;
+
+    margin: 0 0 0 0.45rem;
+
+    color: var(--muted-text-color);
+
+    font-size: 0.84rem;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+form input[type="checkbox"]:focus-visible {
+    outline: 3px solid rgba(49, 95, 143, 0.18);
+    outline-offset: 2px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+button[type="submit"] {
+    width: 100%;
+    min-height: 47px;
+
+    margin-top: 0.35rem;
+    padding: 0.75rem 1rem;
+
+    color: #ffffff;
+    background: var(--primary-color);
+
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius-sm);
+
+    font: inherit;
+    font-size: 0.92rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(49, 95, 143, 0.18);
+
+    transition:
+        background-color var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+
+/* Button hover */
+
+button[type="submit"]:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+
+    box-shadow:
+        0 7px 16px rgba(49, 95, 143, 0.22);
+
+    transform: translateY(-1px);
+}
+
+
+/* Button click */
+
+button[type="submit"]:active {
+    transform: translateY(0);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* Button keyboard focus */
+
+button[type="submit"]:focus-visible {
+    outline: 3px solid rgba(49, 95, 143, 0.2);
+    outline-offset: 2px;
+}
+
+
+/* =========================
+   Login Link
+========================= */
+
+section > p:last-child {
+    margin: 1.4rem 0 0;
+    padding-top: 1.25rem;
+
+    border-top: 1px solid var(--border-color);
+
+    text-align: center;
+
+    color: var(--muted-text-color);
+
+    font-size: 0.86rem;
+}
+
+a {
+    color: var(--primary-color);
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid rgba(49, 95, 143, 0.18);
+    outline-offset: 3px;
+
+    border-radius: 3px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    main {
+        width: min(100% - 1rem, 560px);
+        padding-bottom: 1.5rem;
+    }
+
+    section {
+        padding: 1.35rem 1rem;
+        border-radius: 14px;
+    }
+
+    section h2 {
+        font-size: 1.45rem;
+    }
+
+    section > p {
+        margin-bottom: 1.35rem;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    header h1 {
+        font-size: 1.35rem;
+    }
+
+    header p {
+        font-size: 0.82rem;
+    }
+
+    section {
+        padding: 1.15rem 0.85rem;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form input[type="password"] {
+        min-height: 44px;
+        font-size: 0.88rem;
+    }
+}
+
+
+/* =========================
+   Accessibility
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
