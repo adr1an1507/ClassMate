@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ClassMate | Create Account</title>
     <link rel="stylesheet" href="../css/register.css">
 </head>
@@ -11,86 +13,27 @@
     <!-- Main page wrapper -->
     <div id="page">
 
-        <!-- Register page branding section -->
-        <aside id="branding-section">
-
-            <!-- Website brand -->
-            <div id="brand-header">
-                <div id="brand-icon">C</div>
-
-                <h1 id="website-title">ClassMate</h1>
-            </div>
-
-            <!-- Branding content -->
-            <div id="branding-content">
-                <p id="branding-label">YOUR ACADEMIC COMPANION</p>
-
-                <h2 id="branding-title">
-                    Your classes.<br>
-                    Your tasks.<br>
-                    All in one place.
-                </h2>
-
-                <p id="branding-description">
-                    Stay organized, manage your schedule, and keep track
-                    of your academic responsibilities with ClassMate.
-                </p>
-
-                <!-- Decorative visual -->
-                <div id="branding-decoration" aria-hidden="true">
-                    <div id="decoration-circle-one"></div>
-                    <div id="decoration-circle-two"></div>
-
-                    <div id="decoration-card">
-                        <div id="decoration-card-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <div class="decoration-line line-long"></div>
-                        <div class="decoration-line line-medium"></div>
-                        <div class="decoration-line line-short"></div>
-
-                        <div id="decoration-task">
-                            <span id="decoration-check">✓</span>
-                            <p>Stay on top of your tasks</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Branding footer -->
-            <div id="branding-footer">
-                <p>Designed for students, built for productivity.</p>
-            </div>
-
-        </aside>
-
         <!-- Main registration content -->
         <main id="main-content">
-            
-            <!-- Account registration section -->
+
             <section id="registration-section">
 
                 <!-- Registration heading -->
-                <div id="registration-heading">
+                <header id="registration-heading">
                     <p id="registration-label">GET STARTED</p>
-
-                    <h2 id="registration-title">Create Account</h2>
+                    <h1 id="registration-title">Create Account</h1>
 
                     <p id="registration-description">
                         Create your ClassMate student account.
                     </p>
-                </div>
+                </header>
 
-                <!-- Account registration form -->
+                <!-- Registration form -->
                 <form id="registration-form" action="#" method="post">
 
-                    <!-- Personal information group -->
+                    <!-- Personal information -->
                     <div id="personal-information">
 
-                        <!-- First name -->
                         <div id="first-name-group" class="form-group">
                             <label for="first-name">First Name</label>
                             <input
@@ -103,7 +46,6 @@
                             >
                         </div>
 
-                        <!-- Last name -->
                         <div id="last-name-group" class="form-group">
                             <label for="last-name">Last Name</label>
                             <input
@@ -118,7 +60,7 @@
 
                     </div>
 
-                    <!-- Age field -->
+                    <!-- Age -->
                     <div id="age-group" class="form-group">
                         <label for="age">Age</label>
                         <input
@@ -132,7 +74,7 @@
                         >
                     </div>
 
-                    <!-- University / School field -->
+                    <!-- University or school -->
                     <div id="school-group" class="form-group">
                         <label for="school">University / School</label>
                         <input
@@ -145,7 +87,7 @@
                         >
                     </div>
 
-                    <!-- Email field for account verification -->
+                    <!-- Email address -->
                     <div id="email-group" class="form-group">
                         <label for="email">Email Address</label>
                         <input
@@ -156,13 +98,12 @@
                             autocomplete="email"
                             required
                         >
-
                         <p id="email-description">
                             Used for account verification.
                         </p>
                     </div>
 
-                    <!-- Username field -->
+                    <!-- Username -->
                     <div id="username-group" class="form-group">
                         <label for="username">Username</label>
                         <input
@@ -175,7 +116,7 @@
                         >
                     </div>
 
-                    <!-- Password field -->
+                    <!-- Password -->
                     <div id="password-group" class="form-group">
                         <label for="password">Password</label>
                         <input
@@ -188,7 +129,7 @@
                         >
                     </div>
 
-                    <!-- Password confirmation field -->
+                    <!-- Confirm password -->
                     <div id="confirm-password-group" class="form-group">
                         <label for="confirm-password">Confirm Password</label>
                         <input
@@ -201,8 +142,8 @@
                         >
                     </div>
 
-                    <!-- Terms and conditions agreement -->
-                    <div id="terms-conditions-group" class="form-group">
+                    <!-- Terms and conditions -->
+                    <div id="terms-conditions-group">
                         <input
                             type="checkbox"
                             id="terms-conditions"
@@ -212,7 +153,9 @@
 
                         <label for="terms-conditions">
                             I agree to the
-                            <a id="terms-link" href="#">Terms and Conditions</a>
+                            <a id="terms-link" href="#">
+                                Terms and Conditions
+                            </a>
                         </label>
                     </div>
 
@@ -225,8 +168,8 @@
                     </div>
 
                 </form>
-                
-                <!-- Link to the login page -->
+
+                <!-- Sign-in link -->
                 <div id="login-link-section">
                     <p>
                         Already have an account?
@@ -235,7 +178,10 @@
                 </div>
 
             </section>
+
         </main>
+
     </div>
+
 </body>
 </html>

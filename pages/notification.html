@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMate | Notifications</title>
+    <link rel="stylesheet" href="../css/notification.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="home.html" class="brand">
+                    ClassMate
+                    <span>Student Workspace</span>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="calendar.html" class="nav-link">Calendar</a>
+                <a href="tasks.html" class="nav-link">Tasks</a>
+                <a href="notification.html" class="nav-link active" aria-current="page">Notifications</a>
+                <a href="inbox.html" class="nav-link">Inbox</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="profile.html" class="user-profile">
+                    <div class="user-avatar">U</div>
+                    <div class="user-details">
+                        <strong>Student User</strong>
+                        <small>Student Account</small>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Navigation -->
+            <header class="topbar">
+                <div class="breadcrumb">
+                    <span>Dashboard</span>
+                    <span>/</span>
+                    <strong>Notifications</strong>
+                </div>
+
+                <a href="profile.html" class="topbar-link">Profile</a>
+            </header>
+
+            <!-- Notification Content -->
+            <section class="dashboard-content">
+
+                <!-- Page Heading -->
+                <div class="welcome-section">
+                    <div>
+                        <p class="section-label">UPDATES AND REMINDERS</p>
+                        <h1>Notifications</h1>
+                        <p class="welcome-description">
+                            Stay updated with your tasks, classes, and academic activities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Notification Summary -->
+                <section class="summary-grid">
+                    <article class="summary-card">
+                        <span class="summary-label">All Notifications</span>
+                        <h2>0</h2>
+                        <p>Your recent updates and reminders</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <span class="summary-label">Unread</span>
+                        <h2>0</h2>
+                        <p>Notifications you have not viewed</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <span class="summary-label">Reminders</span>
+                        <h2>0</h2>
+                        <p>Upcoming tasks and deadlines</p>
+                    </article>
+                </section>
+
+                <!-- Notification List -->
+                <section class="content-card">
+                    <div class="card-header">
+                        <div>
+                            <h2>Recent Notifications</h2>
+                            <p>Review your latest academic updates.</p>
+                        </div>
+
+                        <a href="calendar.html" class="text-link">
+                            View Calendar
+                        </a>
+                    </div>
+
+                    <!-- Notification Filters -->
+                    <div class="notification-toolbar">
+                        <label for="notification-filter">Filter by category</label>
+
+                        <select id="notification-filter" name="notification-filter">
+                            <option value="all">All Notifications</option>
+                            <option value="task">Tasks</option>
+                            <option value="class">Classes</option>
+                            <option value="deadline">Deadlines</option>
+                            <option value="announcement">Announcements</option>
+                        </select>
+                    </div>
+
+                    <!-- Empty Notification State -->
+                    <div class="notification-list">
+
+                        <div class="empty-state">
+                            <h3>No notifications yet</h3>
+                            <p>
+                                Notifications about your classes, tasks, and deadlines
+                                will appear here.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Notification Preferences -->
+                <section class="content-card">
+                    <div class="card-header">
+                        <div>
+                            <h2>Notification Preferences</h2>
+                            <p>Choose the types of updates you want to receive.</p>
+                        </div>
+                    </div>
+
+                    <div class="preference-list">
+
+                        <div class="preference-item">
+                            <div class="preference-details">
+                                <h3>Task Reminders</h3>
+                                <p>Receive updates about your academic tasks.</p>
+                            </div>
+
+                            <label class="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    name="task-reminders"
+                                    checked
+                                >
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="preference-item">
+                            <div class="preference-details">
+                                <h3>Class Schedule Reminders</h3>
+                                <p>Receive reminders about scheduled classes.</p>
+                            </div>
+
+                            <label class="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    name="class-reminders"
+                                    checked
+                                >
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="preference-item">
+                            <div class="preference-details">
+                                <h3>Deadline Reminders</h3>
+                                <p>Receive updates about upcoming deadlines.</p>
+                            </div>
+
+                            <label class="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    name="deadline-reminders"
+                                    checked
+                                >
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="preference-item">
+                            <div class="preference-details">
+                                <h3>Announcements</h3>
+                                <p>Receive academic announcements and updates.</p>
+                            </div>
+
+                            <label class="toggle-switch">
+                                <input
+                                    type="checkbox"
+                                    name="announcements"
+                                    checked
+                                >
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- Footer -->
+            <footer class="dashboard-footer">
+                <p>ClassMate &copy; 2026</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>

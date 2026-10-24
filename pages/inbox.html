@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMate | Inbox</title>
+    <link rel="stylesheet" href="../css/inbox.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="home.html" class="brand">
+                    ClassMate
+                    <span>Student Workspace</span>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="calendar.html" class="nav-link">Calendar</a>
+                <a href="tasks.html" class="nav-link">Tasks</a>
+                <a href="inbox.html" class="nav-link active">Inbox</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="profile.html" class="user-profile">
+                    <div class="user-avatar">U</div>
+                    <div class="user-details">
+                        <strong>Student User</strong>
+                        <small>Student Account</small>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="breadcrumb">
+                    <span>Dashboard</span>
+                    <span>/</span>
+                    <strong>Inbox</strong>
+                </div>
+                <a href="profile.html" class="topbar-link">Profile</a>
+            </header>
+
+            <section class="dashboard-content">
+
+                <!-- Page Heading -->
+                <div class="welcome-section">
+                    <div>
+                        <p class="section-label">COMMUNICATION</p>
+                        <h1>Inbox</h1>
+                        <p class="welcome-description">
+                            View your messages, announcements, and academic updates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Inbox Summary -->
+                <section class="summary-grid">
+                    <article class="summary-card">
+                        <span class="summary-label">All Messages</span>
+                        <h2>0</h2>
+                        <p>Total messages received</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <span class="summary-label">Unread</span>
+                        <h2>0</h2>
+                        <p>Messages you have not read</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <span class="summary-label">Announcements</span>
+                        <h2>0</h2>
+                        <p>Academic announcements</p>
+                    </article>
+                </section>
+
+                <!-- Inbox Content -->
+                <section class="content-card">
+                    <div class="card-header">
+                        <div>
+                            <h2>Messages</h2>
+                            <p>Keep track of your academic communications.</p>
+                        </div>
+                    </div>
+
+                    <div class="inbox-toolbar">
+                        <input
+                            type="search"
+                            name="message-search"
+                            placeholder="Search messages..."
+                            aria-label="Search messages"
+                        >
+
+                        <select name="message-filter" aria-label="Filter messages">
+                            <option value="all">All Messages</option>
+                            <option value="unread">Unread</option>
+                            <option value="read">Read</option>
+                            <option value="announcement">Announcements</option>
+                        </select>
+                    </div>
+
+                    <div class="message-list">
+                        <article class="message-item">
+                            <div class="message-avatar">CM</div>
+                            <div class="message-content">
+                                <div class="message-heading">
+                                    <h3>Welcome to ClassMate</h3>
+                                    <span class="message-date">System</span>
+                                </div>
+                                <p>
+                                    Your academic workspace is ready. Use ClassMate
+                                    to organize your schedule and tasks.
+                                </p>
+                                <span class="message-category">Announcement</span>
+                            </div>
+                        </article>
+
+                        <div class="empty-state">
+                            <h3>No other messages</h3>
+                            <p>
+                                New messages and announcements will appear here.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <footer class="dashboard-footer">
+                <p>ClassMate &copy; 2026</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

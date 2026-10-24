@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMate | Tasks</title>
+    <link rel="stylesheet" href="../css/tasks.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="home.html" class="brand">
+                    ClassMate
+                    <span>Student Workspace</span>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="calendar.html" class="nav-link">Calendar</a>
+                <a href="tasks.html" class="nav-link active">Tasks</a>
+                <a href="inbox.html" class="nav-link">Inbox</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="profile.html" class="user-profile">
+                    <div class="user-avatar">U</div>
+                    <div class="user-details">
+                        <strong>Student User</strong>
+                        <small>Student Account</small>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="breadcrumb">
+                    <span>Dashboard</span>
+                    <span>/</span>
+                    <strong>Tasks</strong>
+                </div>
+                <a href="inbox.html" class="topbar-link">Inbox</a>
+            </header>
+
+            <section class="dashboard-content">
+                <div class="welcome-section">
+                    <div>
+                        <p class="section-label">ACADEMIC ORGANIZATION</p>
+                        <h1>My Tasks</h1>
+                        <p class="welcome-description">
+                            Organize your assignments, activities, and academic deadlines.
+                        </p>
+                    </div>
+
+                    <a href="#add-task" class="primary-button">Add Task</a>
+                </div>
+
+                <!-- Task Summary -->
+                <section class="summary-grid">
+                    <article class="summary-card">
+                        <span class="summary-label">All Tasks</span>
+                        <h2>0</h2>
+                        <p>Total academic tasks</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <span class="summary-label">Pending</span>
+                        <h2>0</h2>
+                        <p>Tasks awaiting completion</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <span class="summary-label">Completed</span>
+                        <h2>0</h2>
+                        <p>Finished academic tasks</p>
+                    </article>
+                </section>
+
+                <!-- Task List -->
+                <section class="content-card">
+                    <div class="card-header">
+                        <div>
+                            <h2>Task List</h2>
+                            <p>Review your academic responsibilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="task-toolbar">
+                        <input
+                            type="search"
+                            placeholder="Search tasks..."
+                            aria-label="Search tasks"
+                        >
+
+                        <select aria-label="Filter tasks">
+                            <option>All Tasks</option>
+                            <option>Pending</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+
+                    <div class="task-list">
+                        <div class="empty-state">
+                            <h3>No tasks available</h3>
+                            <p>
+                                Your assignments and activities will appear here.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Add Task Form -->
+                <section class="content-card add-task-card" id="add-task">
+                    <div class="card-header">
+                        <div>
+                            <h2>Add a Task</h2>
+                            <p>Enter the details of your academic task.</p>
+                        </div>
+                    </div>
+
+                    <form action="#" method="get" class="task-form">
+                        <div class="form-group">
+                            <label for="task-title">Task Title</label>
+                            <input
+                                type="text"
+                                id="task-title"
+                                name="task-title"
+                                placeholder="Enter task title"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="task-course">Course or Subject</label>
+                            <input
+                                type="text"
+                                id="task-course"
+                                name="task-course"
+                                placeholder="Enter course or subject"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="task-due-date">Due Date</label>
+                            <input
+                                type="date"
+                                id="task-due-date"
+                                name="task-due-date"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="task-priority">Priority</label>
+                            <select id="task-priority" name="task-priority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="task-description">Description</label>
+                            <textarea
+                                id="task-description"
+                                name="task-description"
+                                rows="4"
+                                placeholder="Enter task details"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-actions full-width">
+                            <button type="reset" class="secondary-button">
+                                Clear
+                            </button>
+                            <button type="submit" class="primary-button">
+                                Save Task
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+
+            <footer class="dashboard-footer">
+                <p>ClassMate &copy; 2026</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

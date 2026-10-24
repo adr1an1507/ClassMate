@@ -4,134 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClassMate | Calendar</title>
+    <link rel="stylesheet" href="../css/calendar.css">
 </head>
 <body>
-
     <div class="dashboard-container">
-        <!-- Sidebar Navigation -->
+
+        <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <a href="index.html" class="brand">ClassMate
+                <a href="index.html" class="brand">
+                    ClassMate
                     <p>Student Workspace</p>
                 </a>
             </div>
 
-            <!-- Navigation links -->
             <nav class="sidebar-nav" aria-label="Main Navigation">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="calendar.html" class="nav-link active">Calendar</a>
+                <a href="calendar.html" class="nav-link active" aria-current="page">Calendar</a>
                 <a href="tasks.html" class="nav-link">Tasks</a>
                 <a href="notification.html" class="nav-link">Inbox</a>
                 <a href="profile.html" class="nav-link">Profile</a>
             </nav>
 
-            <!-- Footer -->
             <div class="sidebar-footer">
                 <a href="profile.html" class="user-profile">
-                    <div class="user-avatar">U
-                        <div class="user-details">
-                            <strong>User
-                                <small>Student Account</small>
-                            </strong>
-                        </div>
+                    <div class="user-avatar">U</div>
+                    <div class="user-details">
+                        <strong>User</strong>
+                        <small>Student Account</small>
                     </div>
                 </a>
             </div>
         </aside>
 
-        <!-- Main content -->
+        <!-- Main Content -->
         <main class="main-content">
-            <!-- Top navigation -->
+
+            <!-- Top Navigation -->
             <header class="topbar">
                 <div class="breadcrumb">
-                    <span>Dashboard
-                        <span>/
-                            <strong>Calendar</strong>
-                        </span>
-                    </span>
+                    <span>Dashboard</span>
+                    <span aria-hidden="true">/</span>
+                    <strong>Calendar</strong>
                 </div>
 
                 <div class="topbar-actions">
-                    <a href="notification.html" class="topbar-link">Notifications
-                        <a href="profile.html" class="topbar-profile">Profile
-                        </a>
-                    </a>
+                    <a href="notification.html" class="topbar-link">Notifications</a>
+                    <a href="profile.html" class="topbar-profile">Profile</a>
                 </div>
             </header>
 
+            <!-- Calendar Dashboard -->
             <section class="dashboard-content">
+
                 <!-- Page Heading -->
                 <div class="welcome-section">
                     <div>
-                        <p class="section-label">Schedule Management
-                            <h1>Calendar
-                                <p class="welcome-description">View your class schedules, tasks, and deadlines.</p>
-                            </h1>
+                        <p class="section-label">Schedule Management</p>
+                        <h1>Calendar</h1>
+                        <p class="welcome-description">
+                            View your class schedules, tasks, and deadlines.
                         </p>
                     </div>
-                    <button type="button" class="primary-button" id="addEventBtn">Add Event</button>
+
+                    <button type="button" class="primary-button" id="addEventBtn">
+                        Add Event
+                    </button>
                 </div>
 
                 <!-- Calendar -->
-                <section class="content-card calendar-card">
+                <section class="content-card calendar-card" aria-label="Calendar">
                     <div class="calendar-toolbar">
                         <div>
-                            <h2 id="calendar-month">October 2026
-                                <p>Manage your academic schedule</p>
-                            </h2>
+                            <h2 id="calendar-month">October 2026</h2>
+                            <p>Manage your academic schedule</p>
                         </div>
 
                         <div class="calendar-controls">
-                            <button type="button" id="prevMonth">Previous
-                                <button type="button" id="todayBtn" class="calendar-button">Today
-                                    <button type="button" id="nextMonth" class="calendar-button">Next</button>
-                                </button>
+                            <button type="button" id="prevMonth" class="calendar-button">
+                                Previous
+                            </button>
+
+                            <button type="button" id="todayBtn" class="calendar-button">
+                                Today
+                            </button>
+
+                            <button type="button" id="nextMonth" class="calendar-button">
+                                Next
                             </button>
                         </div>
                     </div>
 
-                    <!-- Calendar Grid -->
-                    <div class="calendar-grid" id="calendarGrid">
-                        <div class="calendar-day-name">Sun
-                            <div class="calendar-day-name">Mon
-                                <div class="calendar-day-name">Tue
-                                    <div class="calendar-day-name">Wed
-                                        <div class="calendar-day-name">Thu
-                                            <div class="calendar-day-name">Fri
-                                                <div class="calendar-day-name">Sat
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div
+                        class="calendar-grid"
+                        id="calendarGrid"
+                        role="grid"
+                        aria-label="Monthly calendar"
+                    >
+                        <div class="calendar-day-name" role="columnheader">Sun</div>
+                        <div class="calendar-day-name" role="columnheader">Mon</div>
+                        <div class="calendar-day-name" role="columnheader">Tue</div>
+                        <div class="calendar-day-name" role="columnheader">Wed</div>
+                        <div class="calendar-day-name" role="columnheader">Thu</div>
+                        <div class="calendar-day-name" role="columnheader">Fri</div>
+                        <div class="calendar-day-name" role="columnheader">Sat</div>
                     </div>
                 </section>
 
-                <!-- Calendar Legend -->
+                <!-- Schedule Categories -->
                 <section class="content-card">
                     <div class="card-header">
                         <div>
-                            <h2>Schedule Overview
-                                <p>Categories displayed in your calendar</p>
-                            </h2>
+                            <h2>Schedule Overview</h2>
+                            <p>Categories displayed in your calendar</p>
                         </div>
                     </div>
 
                     <div class="calendar-legend">
                         <div class="legend-item">
-                            <span class="legend-color class-color">
-                                <span>Class Schedule
-                                </span>
-                            </span>
+                            <span class="legend-color class-color" aria-hidden="true"></span>
+                            <span>Class Schedule</span>
                         </div>
 
                         <div class="legend-item">
-                            <span class="legend-color deadline-color">
-                                <span>Deadline
-                                </span>
-                            </span>
+                            <span class="legend-color task-color" aria-hidden="true"></span>
+                            <span>Academic Task</span>
+                        </div>
+
+                        <div class="legend-item">
+                            <span class="legend-color deadline-color" aria-hidden="true"></span>
+                            <span>Deadline</span>
                         </div>
                     </div>
                 </section>
@@ -140,71 +142,124 @@
                 <section class="content-card">
                     <div class="card-header">
                         <div>
-                            <h2>Upcoming Events
-                                <p>Your scheduled classes and important deadlines/</p>
-                            </h2>
+                            <h2>Upcoming Events</h2>
+                            <p>Your scheduled classes and important deadlines.</p>
                         </div>
                     </div>
 
-                    <div class="upcoming-event" id="upcomingEvents">
-                        <p class="empty-state">Select a date or add event to manage your schedule.</p>
+                    <div class="upcoming-event" id="upcomingEvents" aria-live="polite">
+                        <p class="empty-state">
+                            No upcoming events. Select a date or add an event to manage your schedule.
+                        </p>
                     </div>
                 </section>
+
             </section>
 
             <!-- Footer -->
             <footer class="dashboard-footer">
                 <p>ClassMate &copy; 2026</p>
             </footer>
+
         </main>
     </div>
 
-    <!-- Add Event Dialog  -->
-    <dialog id="eventDialog" class="event-dialog">
+    <!-- Add Event Dialog -->
+    <dialog id="eventDialog" class="event-dialog" aria-labelledby="eventDialogTitle">
         <form id="eventForm">
+
             <div class="dialog-header">
-                <h2>Add Celendar Event
-                    <button type="button" id="closeDialogBtn" class="close-dialog" aria-label="Close dialog">Close</button>
-                </h2>
+                <h2 id="eventDialogTitle">Add Calendar Event</h2>
+
+                <button
+                    type="button"
+                    id="closeDialogBtn"
+                    class="close-dialog"
+                    aria-label="Close dialog"
+                >
+                    Close
+                </button>
             </div>
 
-            <label for="eventTitle">Event Title
-                <input type="text" id="eventTitle" name="eventTitle" placeholder="Enter event title" required maxlength="100">
-                    <label for="eventDate">Date
-                        <input type="date" id="eventDate" name="eventDate" required>
-                            <label for="eventStart">Start Time
-                                <input type="time" id="eventStart" name="eventStart" required>
-                                    <label for="eventEnd">End Time
-                                        <input type="time" id="eventEnd" name="eventEnd" required>
-                                            <label for="eventCategory">
-                                                <select id="eventCategory" name="eventCategory" required>
-                                                    <option value="class">Class Schedule
-                                                        <option value="task">Academic Class
-                                                            <option value="deadline">Deadline
-                                                            </option>
-                                                        </option>
-                                                    </option>
-                                                </select>
-                                            </label>
-                                    </label>
-                            </label>
-                    </label>
+            <label for="eventTitle">
+                Event Title
+                <input
+                    type="text"
+                    id="eventTitle"
+                    name="eventTitle"
+                    placeholder="Enter event title"
+                    required
+                    maxlength="100"
+                >
             </label>
 
-            <label for="eventDescription">Description
-                <textarea id="eventDescription" name="eventDescription" rows="3" placeholder="Additional details(optional)">
-                </textarea>
+            <label for="eventDate">
+                Date
+                <input
+                    type="date"
+                    id="eventDate"
+                    name="eventDate"
+                    required
+                >
             </label>
+
+            <div class="form-row">
+                <label for="eventStart">
+                    Start Time
+                    <input
+                        type="time"
+                        id="eventStart"
+                        name="eventStart"
+                        required
+                    >
+                </label>
+
+                <label for="eventEnd">
+                    End Time
+                    <input
+                        type="time"
+                        id="eventEnd"
+                        name="eventEnd"
+                        required
+                    >
+                </label>
+            </div>
+
+            <label for="eventCategory">
+                Event Category
+                <select id="eventCategory" name="eventCategory" required>
+                    <option value="class">Class Schedule</option>
+                    <option value="task">Academic Task</option>
+                    <option value="deadline">Deadline</option>
+                </select>
+            </label>
+
+            <label for="eventDescription">
+                Description
+                <textarea
+                    id="eventDescription"
+                    name="eventDescription"
+                    rows="3"
+                    placeholder="Additional details (optional)"
+                ></textarea>
+            </label>
+
+            <p id="eventFormError" class="form-error" role="alert"></p>
 
             <div class="dialog-actions">
-                <button type="button" id="cancelEventBtn" class="calendar-button">Cancel
-                    <button type="submit" class="primary-button">Save
-                    </button>
+                <button type="button" id="cancelEventBtn" class="calendar-button">
+                    Cancel
+                </button>
+
+                <button type="submit" class="primary-button">
+                    Save Event
                 </button>
             </div>
 
         </form>
     </dialog>
 
+    <!-- JavaScript -->
+    <script src="../js/calendar.js"></script>
 </body>
 </html>
